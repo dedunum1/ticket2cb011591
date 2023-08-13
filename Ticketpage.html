@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ticketpage.css">
+    <title>tickets</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./OIP.jpeg" alt="logo">
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <div class="logo"></div>
+            <ul>
+                <li>
+                    <a href="" class="active">Tickets ></a>
+                </li>
+                <li>
+                    <a href="">Details ></a>
+                </li>
+                <li>
+                    <a href="">Payment ></a>
+                </li>
+                <li>
+                    <a href="">Confirmation ></a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    <br>
+    <br>
+
+   <center> <h1>Buy Tickets</h1> </center>
+   <div id="summary"></div>
+ 
+  
+    <form>
+   <center><h2>Select Your Date</h2>
+<input type="date" id="date">
+
+   
+   <center><h2>Guests</h2></center>
+   <table class="prices">
+    <tr>
+        <th>Category</th>
+        <th>Time</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Foreign Adult</td>
+        <td>Normal hour</td>
+        <td>10 USD</td>
+    </tr>
+    <tr>
+        <td>Foreign Adult</td>
+        <td>Peak hour</td>
+        <td>13 USD</td>
+    </tr>
+    <tr>
+        <td>Foreign Child</td>
+        <td>Normal hour</td>
+        <td>5 USD</td>
+    </tr>
+    <tr>
+        <td>Foreign Child</td>
+        <td>Peak hour</td>
+        <td>8 USD</td>
+    </tr>
+    <tr>
+        <td>SL Adult</td>
+        <td>Normal hour</td>
+        <td>4 USD</td>
+    </tr>
+    <tr>
+        <td>SL Adult</td>
+        <td>Peak hour</td>
+        <td>6 USD</td>
+    </tr>
+    <tr>
+        <td>SL Child</td>
+        <td>Normal hour</td>
+        <td>2 USD</td>
+    </tr>
+    <tr>
+        <td>SL Child</td>
+        <td>Peak hour</td>
+        <td>3 USD</td>
+    </tr>
+    <tr>
+        <td>Infant (Under 4)</td>
+        <td>Any hour</td>
+        <td>Free</td>
+    </tr>
+    </table>
+   <br><br>
+   <br>
+
+
+   <div class="guests">
+    <caption class="heading"><strong>Pick the amount</strong></caption>
+    <div class="ticket-category">
+      <label for="sl-adult">SL Adult:</label>
+      <input type="number" id="sl-adult" name="sl-adult" min="0" value="0" required>
+    </div>
+    <div class="ticket-category">
+      <label for="sl-child">SL Child:</label>
+      <input type="number" id="sl-child" name="sl-child" min="0" value="0" required>
+    </div>
+    <div class="ticket-category">
+      <label for="foreigner-adult">Foreigner Adult:</label>
+      <input type="number" id="foreigner-adult" name="foreigner-adult" min="0" value="0" required>
+    </div>
+    <div class="ticket-category">
+      <label for="foreigner-child">Foreigner Child:</label>
+      <input type="number" id="foreigner-child" name="foreigner-child" min="0" value="0" required>
+    </div>
+    <div class="ticket-category">
+      <label for="infant">Infant:</label>
+      <input type="number" id="infant" name="infant" min="0" value="0" required>
+    </div>
+      </div>
+
+   <center><h2>Duration</h2></center>
+   <br>
+   
+  <center><h3>Select Time Duration</h3></center>
+    <br>
+   <center><div class="dropdown1">
+        <select id="duration" multiple size="11">
+          <option value="1"> 07.00 am - 08.00 am</option>
+          <option value="2"> 08.00 am - 09.00 am</option>
+          <option value="3"> 09.00 am - 10.00 am</option>
+          <option value="4"> 10.00 am - 11.00 am (peak)</option>
+          <option value="5"> 11.00 am - 12.00 pm (peak)</option>
+          <option value="6"> 12.00 pm - 1.00 pm (peak)</option>
+          <option value="7"> 1.00 pm - 2.00 pm </option>
+          <option value="8"> 2.00 pm - 3.00 pm </option>
+          <option value="9"> 3.00 pm - 4.00 pm (peak)</option>
+          <option value="10"> 4.00 pm - 5.00 pm (peak)</option>
+          <option value="11"> 5.00 pm - 6.00 pm (peak) </option>
+          
+          
+        </select>
+        
+      </div></center>
+
+
+      <input type="reset"value="reset">
+      </form>
+      <br>
+      <br>
+      <br>
+      <br>
+     
+
+      
+
+    
+
+      
+
+  <center> <a href="./details.html"> <button type="button" class="btn" >Display Summary Table</button></a></center>
+  <br>
+  <br>
+  <center> <a href="./details.html"> <button type="button" class="btn" >Continue With Purchase</button></a></center>
+
+
+  <script src="./tickets.js"></script>
+
+   <br>
+   <br>
+   <br>
+   <br>
+   
+</body>
+</html>

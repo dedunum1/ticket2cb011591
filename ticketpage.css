@@ -1,0 +1,413 @@
+* {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: white;
+
+}
+img{
+    width: 300px;
+}
+header{
+    width: 80%;
+    height: 70px;
+    background: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+}
+.logo{
+    width: 120PX;
+    margin-top: 8px;
+}
+nav.logo{
+    display: none;
+}
+nav ul{
+    display: flex;
+
+}
+nav ul li  a{
+    color: black;
+    display: block;
+    margin: 0 2px;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+
+}
+nav ul li a:hover{
+    background: white;
+}
+nav ul li a.active{
+    background:plum;
+    color: #fff;
+}
+.hamburger{
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+
+}
+.hamburger:hover{
+    background: #f6f4ff;
+}
+.hamburger div{
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: black;
+
+}
+@media only screen and(max-width:1100px) {
+    header{
+        width: 90%;
+        padding:0 20px;
+    }
+    nav{
+        position: absolute;
+        left:-300px;
+        top: 0;
+        z-index: 999;
+        width:280px;
+        height:100vh;
+        background-color: #fefefe;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0,0,0,0.05); 
+    }
+    
+nav.logo{
+    display: block;
+    height: 70px;
+    display:flex;
+    align-items: center;
+    margin-left: 30px;
+
+}
+nav ul li a{
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+nav ul{
+    display: block;
+    padding: 0 20px;
+    margin-top: 30px;
+
+}
+.hamburger{
+    display: block;
+}
+
+    
+}
+
+h1{
+    font-size: 90px;
+    align-items: center;
+    font-family:cursive;
+    color:green;
+}
+h2{
+    font-size: 40px;
+    font-family: cursive;
+    color: teal;
+    padding-left:20px;
+}
+
+/* payment form */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 25px;
+    min-height: 100vh;
+    background:white;
+    padding-bottom: 70px;
+}
+
+.container form{
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,1);
+}
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+
+
+}
+.container form .row .col
+{
+    flex:1 1 250px;
+}
+.container form .row .col .title
+{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.container form .row .col .inputbox
+{
+    margin: 15px 0;
+}
+.container form .row .col.inputbox span
+{
+    margin-bottom: 10px;
+    display: block;
+}
+.container form .row .col.inputbox input
+{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-transform: none;
+
+}
+.container form .row .col.inputbox input:focus{
+    border: 1px solid #000;
+}
+.container form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+.container .form .row .col .flex .inputbox{
+    margin-top: 5px;
+}
+.container form .row .col .inputbox img{
+    height: 34px;
+    margin-top: 5px;
+    filter:drop-shadow(0 0 1px #000);
+
+}
+.container form .submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: red;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.container form .submit-btn:hover{
+    background: darkred;
+}
+
+
+
+.btn{
+    border: none;
+    background: red;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+.btn:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the table and form */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    padding: 8px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the input fields and labels */
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+select {
+    appearance: none; /* Remove default dropdown arrow */
+    background: #fff url("dropdown-arrow.png") no-repeat right center; /* Replace "dropdown-arrow.png" with the actual image path */
+    background-size: 20px; /* Adjust the size of the dropdown arrow */
+    padding-right: 30px; /* Make space for the arrow */
+}
+
+/* Style the radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add some additional styling for the dropdown flag */
+.flag {
+    width: 20px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 5px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.dropdown{
+    display: block;
+    padding-left: 20px;
+    width: 15%
+    
+    
+}
+h3{
+    font-size: 20px;
+    font-family: cursive;
+    color:red;
+    padding-left:20px;
+}
+
+
+
+
+/* ticketpage.css */
+
+/* ... (Your existing styles) */
+
+/* Additional styling for the summary container */
+#summary {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 300px; /* Adjust the width as needed */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Apply some basic styling to the summary table */
+#summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#summary-table th, #summary-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#summary-table th {
+    background-color: #f2f2f2;
+}
+
+/* Center the heading */
+h1 {
+    text-align: center;
+}
+
+/* Set some margin and padding for the body */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Styling for the summary table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+/* Align the summary table to the top-right corner */
+#summaryTableDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+
+

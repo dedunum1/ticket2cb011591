@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ticketpage.css">
+    <title>tickets</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./OIP.jpeg" alt="logo">
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <div class="logo"></div>
+            <ul>
+                <li>
+                    <a href="" >Tickets ></a>
+                </li>
+                <li>
+                    <a href="">Details ></a>
+                </li>
+                <li>
+                    <a href="">Payment ></a>
+                </li>
+                <li>
+                    <a href=""class="active">Confirmation ></a>
+                </li>
+            </ul>
+        </nav>
+           
+    </header>
+
+
+    
+    <div class="tickets">
+        <div class="tickets-4">
+            <br>
+            <br>
+
+          <h3 class="summaryP">Thank you for your order. Your order has been confirmed with us. You can show the confirmation at the entrance. <br>Following is the summary of your order</h3>
+            <br> <br>
+
+
+
+            <h2>User Summary</h2>
+            
+            
+           
+        
+
+            
+         <!-- HTML -->
+<table>
+    <tr><td>Full Name</td><td id="name"></td></tr>
+    <tr><td>Mobile Number</td><td id="phone"></td></tr>
+    <tr><td>Email</td><td id="email"></td></tr>
+    <tr><td>Gender</td><td id="maleGender"></td></tr>
+    <tr><td>Total</td><td id="totalPrice"></td></tr>
+</table>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Retrieve user data from local storage
+            const userDataJSON = localStorage.getItem('userData');
+            const userData = JSON.parse(userDataJSON);
+
+            // Display user data in the table
+            document.getElementById('name').textContent = userData.fullName;
+            document.getElementById('phone').textContent = `${userData.countryCode} ${userData.phoneNumber}`;
+            document.getElementById('email').textContent = userData.email;
+            document.getElementById('gender').textContent = userData.gender;
+        });
+    </script>
+
+
+            
+    
+             
+           
+            <center> <a href="./hikkaduwathatch.html"> <button type="button" class="btn" >Return</button></a></center>
+    
+    
+    <!--Footer-->
+    <footer class="footer"> 
+        <h5>2023 All rights reserved. Turtles hatcheries SL</h5>
+    </footer>
+
+    
+    <script src="./tickets.js" type="text/javascrip"></script>
+    
+</body>
+</html>
+    
+</body>
+</html>
